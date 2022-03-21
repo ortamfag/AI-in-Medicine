@@ -1,18 +1,29 @@
 .nav
     background-color: #011225
-    justify-content: space-around
+    justify-content: space-between
+    padding: 30px 5%
 
-    &_list
-        display: flex
+    &__list
         align-items: center
         justify-content: space-around
 
-    &_item
+    &__item
         color: $white
         list-style-type: none
         font:
-            family: $thin
+            family: $regular
+            weight: 400
             size: 22px
+        transition: font-weight 0.5s ease-in-out
+
         &::after
             content: ''
             margin-right: 31px
+
+        &:hover,
+        &.be-bold
+            font-weight: 700
+            
+
+    &__img img:nth-child(1)
+        margin-right: 100px
