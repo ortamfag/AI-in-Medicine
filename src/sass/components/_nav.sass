@@ -9,10 +9,9 @@
 
     &__item
         list-style-type: none
-        font:
-            family: $light
-            size: 22px
         opacity: 80%
+        font-size: 22px
+        @include light
         cursor: pointer
 
         &::after
@@ -26,6 +25,8 @@
         
         & a
             color: $white
+
+
             
 
     &__img img:nth-child(1)
