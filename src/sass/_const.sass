@@ -19,3 +19,16 @@ $white: #FFFFFF
 
 a
     text-decoration: none
+
+@mixin button 
+    border-radius: 7px
+    @include bold
+    font-size: 22px
+    color: $white
+    cursor: pointer
+    width: 295px
+    height: 62px
+    padding-bottom: 3px
+
+.btn
+    @include button
