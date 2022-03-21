@@ -8,21 +8,24 @@
         justify-content: space-around
 
     &__item
-        color: $white
         list-style-type: none
         font:
-            family: $regular
-            weight: 400
+            family: $light
             size: 22px
-        transition: font-weight 0.5s ease-in-out
+        opacity: 80%
+        cursor: pointer
 
         &::after
             content: ''
             margin-right: 31px
 
-        &:hover,
-        &.be-bold
-            font-weight: 700
+        &:hover
+            opacity: 100%
+            font-size: 23px
+            transition: 0.4s
+        
+        & a
+            color: $white
             
 
     &__img img:nth-child(1)
