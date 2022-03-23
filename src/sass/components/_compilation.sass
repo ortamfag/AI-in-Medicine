@@ -20,20 +20,24 @@
     &__item
 
         &-title
-            justify-content: space-between
             align-items: center
             margin-bottom: 45px
 
             & div
                 background-color: #06BCC1
                 border-radius: 13px
-                padding: 18px
+                width: 95px
+                height: 95px
+                background-repeat: no-repeat
+                background-position: center center
 
+            
         &-title p
             @include bold
             font-size: 37px
             line-height: 43px
             color: $white
+            margin-left: 25px
             
         & a
             display: block
@@ -44,4 +48,34 @@
             color: $white
             margin-bottom: 15px
 
+    &-btn
+        background-color: #06BCC1
+        border: 2px solid #06BCC1
+        display: block
+        margin: 70px auto 0 auto
+
         
+
+        &:hover
+            background-color: $white
+            border: 2px solid $white
+            color: #06BCC1
+            transition: 0.4s
+
+
+#compilation
+
+    &-first
+        background-image: url('../img/pulse.svg')
+
+    &-second
+        background-image: url('../img/diagnostic.svg')
+    
+    &-third
+        background-image: url('../img/solutions.svg')
+    
+    &-fourth
+        background-image: url('../img/health.svg')
+    
+    &-fifth
+        background-image: url('../img/science.svg')
