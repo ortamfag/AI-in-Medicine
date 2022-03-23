@@ -1,0 +1,30 @@
+#intro h1
+    color: $black
+
+.intro
+
+    &__wrapper
+        padding: 105px 5%
+
+    &__inner
+        flex-direction: column
+
+    &__item
+        justify-content: space-around
+        align-items: flex-start
+        margin-top: 60px
+
+    &__item img:nth-child(1)
+        padding-top: 10px 
+        
+        
+    &__item p:nth-child(2)
+        color: #8F4099
+        @include bold
+        font-size: 35px
+        min-width: 380px
+    &__item p:nth-child(4)
+        color: $black
+        @include roboto
+        font-size: 22px    
+        width: 42%

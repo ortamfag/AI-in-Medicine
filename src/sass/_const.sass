@@ -7,11 +7,16 @@
 @mixin regular
     font-family: 'TT Firs Regular'
     font-weight: 400
+@mixin medium
+    font-family: 'TT Firs Medium'
+    font-weight: 500
 @mixin roboto
     font-family: 'Roboto'
     font-weight: 400
 
+
 $white: #FFFFFF 
+$black: #000000
 
 
 .flex
@@ -32,3 +37,9 @@ a
 
 .btn
     @include button
+
+.section-title
+    @include medium
+    font-size: 30px
+    line-height: 33px
+
