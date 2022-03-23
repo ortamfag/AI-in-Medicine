@@ -1,0 +1,47 @@
+.compilation
+
+    &__wrapper
+        padding: 105px 5%
+        background-color: #8F4099
+
+        &-h1
+            color: $white
+            margin-bottom: 60px
+        &-p
+            color: $white
+            margin-bottom: 80px
+    
+    &__inner
+        display: grid
+        grid-template-columns: 50% 50%
+        grid-column-gap: 40px
+        grid-row-gap: 80px
+
+    &__item
+
+        &-title
+            justify-content: space-between
+            align-items: center
+            margin-bottom: 45px
+
+            & div
+                background-color: #06BCC1
+                border-radius: 13px
+                padding: 18px
+
+        &-title p
+            @include bold
+            font-size: 37px
+            line-height: 43px
+            color: $white
+            
+        & a
+            display: block
+            @include roboto
+            font-size: 26px
+            line-height: 35px
+            text-decoration-line: underline
+            color: $white
+            margin-bottom: 15px
+
+        
