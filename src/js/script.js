@@ -74,10 +74,20 @@ britain.addEventListener('mouseenter', () => britain.classList.toggle('none'))
 britain.addEventListener('mouseenter', () => britainActive.classList.remove('none'))
 britain.addEventListener('mouseenter', () => britainArrow.classList.remove('none'))
 britain.addEventListener('mouseenter', () => britainPreview.classList.toggle('country-preview-active'))
+britainPreview.addEventListener('mouseenter', () => britain.classList.toggle('none'))
+britainPreview.addEventListener('mouseenter', () => britainActive.classList.remove('none'))
+britainPreview.addEventListener('mouseenter', () => britainArrow.classList.remove('none'))
+britainPreview.addEventListener('mouseenter', () => britainPreview.classList.toggle('country-preview-active'))
+
+
 britainActive.addEventListener('mouseout', () => britain.classList.remove('none'))
 britainActive.addEventListener('mouseout', () => britainActive.classList.toggle('none'))
 britainActive.addEventListener('mouseout', () => britainArrow.classList.toggle('none'))
 britainActive.addEventListener('mouseout', () => britainPreview.classList.remove('country-preview-active'))
+britainPreview.addEventListener('mouseout', () => britain.classList.remove('none'))
+britainPreview.addEventListener('mouseout', () => britainActive.classList.toggle('none'))
+britainPreview.addEventListener('mouseout', () => britainArrow.classList.toggle('none'))
+britainPreview.addEventListener('mouseout', () => britainPreview.classList.remove('country-preview-active'))
 
 //singapore
 
