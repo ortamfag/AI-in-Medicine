@@ -76,11 +76,23 @@ usa.addEventListener('mouseenter', () => usa.classList.toggle('none'))
 usa.addEventListener('mouseenter', () => alaska.classList.toggle('none'))
 usa.addEventListener('mouseenter', () => usaActive.classList.remove('none'))
 usa.addEventListener('mouseenter', () => alaskaActive.classList.remove('none'))
+usa.addEventListener('mouseenter', () => usaArrow.classList.remove('none'))
+usa.addEventListener('mouseenter', () => usaPreview.classList.toggle('country-preview-active'))
+usaPreview.addEventListener('mouseenter', () => usa.classList.toggle('none'))
+usaPreview.addEventListener('mouseenter', () => usaActive.classList.remove('none'))
+usaPreview.addEventListener('mouseenter', () => usaArrow.classList.remove('none'))
+usaPreview.addEventListener('mouseenter', () => usaPreview.classList.toggle('country-preview-active'))
 
 usaActive.addEventListener('mouseout', () => usa.classList.remove('none'))
 usaActive.addEventListener('mouseout', () => alaska.classList.remove('none'))
 usaActive.addEventListener('mouseout', () => usaActive.classList.toggle('none'))
 usaActive.addEventListener('mouseout', () => alaskaActive.classList.toggle('none'))
+usaActive.addEventListener('mouseout', () => usaArrow.classList.toggle('none'))
+usaActive.addEventListener('mouseout', () => usaPreview.classList.remove('country-preview-active'))
+usaPreview.addEventListener('mouseout', () => usa.classList.remove('none'))
+usaPreview.addEventListener('mouseout', () => usaActive.classList.toggle('none'))
+usaPreview.addEventListener('mouseout', () => usaArrow.classList.toggle('none'))
+usaPreview.addEventListener('mouseout', () => usaPreview.classList.remove('country-preview-active'))
 
 //alaska
 
@@ -88,11 +100,21 @@ alaska.addEventListener('mouseenter', () => usa.classList.toggle('none'))
 alaska.addEventListener('mouseenter', () => alaska.classList.toggle('none'))
 alaska.addEventListener('mouseenter', () => usaActive.classList.remove('none'))
 alaska.addEventListener('mouseenter', () => alaskaActive.classList.remove('none'))
+alaska.addEventListener('mouseenter', () => usaArrow.classList.remove('none'))
+alaska.addEventListener('mouseenter', () => usaPreview.classList.toggle('country-preview-active'))
+usaPreview.addEventListener('mouseenter', () => alaska.classList.toggle('none'))
+usaPreview.addEventListener('mouseenter', () => alaskaActive.classList.remove('none'))
+
 
 alaskaActive.addEventListener('mouseout', () => usa.classList.remove('none'))
 alaskaActive.addEventListener('mouseout', () => alaska.classList.remove('none'))
 alaskaActive.addEventListener('mouseout', () => usaActive.classList.toggle('none'))
 alaskaActive.addEventListener('mouseout', () => alaskaActive.classList.toggle('none'))
+alaskaActive.addEventListener('mouseout', () => usaArrow.classList.toggle('none'))
+alaskaActive.addEventListener('mouseout', () => usaPreview.classList.remove('country-preview-active'))
+usaPreview.addEventListener('mouseout', () => alaska.classList.remove('none'))
+usaPreview.addEventListener('mouseout', () => alaskaActive.classList.toggle('none'))
+
 
 //britain
 
