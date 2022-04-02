@@ -50,3 +50,24 @@ a
 .compilation__icon
     width: 60px
     height: 60px
+
+@mixin preview
+    background: #06BCC1
+    border: 2px solid #06BCC1
+    border-radius: 7px
+    filter: drop-shadow(4px 4px 4px #3F54A5);
+    color: $white
+    padding: 7px 25px
+    @include bold
+    font-size: 13px
+    cursor: pointer
+    
+
+.country-preview
+    @include preview
+
+.country-preview-active
+    @include preview
+    background: $black
+    border: 2px solid $black
+    transition: 0.2s

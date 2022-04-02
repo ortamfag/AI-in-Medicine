@@ -13,6 +13,8 @@ switch2.addEventListener('click', () => switch1.classList.remove('trend__switch-
 switch2.addEventListener('click', () => trendText2.classList.toggle('trend__text-active'))
 switch2.addEventListener('click', () => trendText1.classList.remove('trend__text-active'))
 
+const britainPreview = document.querySelector('#britain__preview')
+
 const china = document.querySelector('#china')
 const chinaActive = document.querySelector('#chinaActive')
 
@@ -24,6 +26,7 @@ const alaskaActive = document.querySelector('#alaskaActive')
 
 const britain = document.querySelector('#britain')
 const britainActive = document.querySelector('#britainActive')
+const britainArrow = document.querySelector('#britainArrow-black')
 
 const singapore = document.querySelector('#singapore')
 const singaporeActive = document.querySelector('#singaporeActive')
@@ -69,8 +72,12 @@ alaskaActive.addEventListener('mouseout', () => alaskaActive.classList.toggle('n
 
 britain.addEventListener('mouseenter', () => britain.classList.toggle('none'))
 britain.addEventListener('mouseenter', () => britainActive.classList.remove('none'))
+britain.addEventListener('mouseenter', () => britainArrow.classList.remove('none'))
+britain.addEventListener('mouseenter', () => britainPreview.classList.toggle('country-preview-active'))
 britainActive.addEventListener('mouseout', () => britain.classList.remove('none'))
 britainActive.addEventListener('mouseout', () => britainActive.classList.toggle('none'))
+britainActive.addEventListener('mouseout', () => britainArrow.classList.toggle('none'))
+britainActive.addEventListener('mouseout', () => britainPreview.classList.remove('country-preview-active'))
 
 //singapore
 
