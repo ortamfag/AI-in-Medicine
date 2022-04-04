@@ -198,3 +198,7 @@ oaePreview.addEventListener('mouseout', () => oae.classList.remove('none'))
 oaePreview.addEventListener('mouseout', () => oaeActive.classList.toggle('none'))
 oaePreview.addEventListener('mouseout', () => oaeArrow.classList.toggle('none'))
 oaePreview.addEventListener('mouseout', () => oaePreview.classList.remove('country-preview-active'))
+
+
+//popup
+

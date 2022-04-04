@@ -1,0 +1,55 @@
+.popup
+    position: fixed
+    width: 100%
+    height: 100%
+    background-color: rgba(0, 0, 0, 0.4)
+    top: 0
+    left: 0 
+    color: $white
+    opacity: 0
+    visibility: hidden
+
+    &__body
+        min-height: 100%
+        display: flex
+        align-items: center
+        justify-content: center
+        padding: 30px 10px
+
+    &__content
+        background-color: $white
+        color: #000
+        max-width: 720px
+        padding: 50px
+        position: relative
+
+    &__title 
+
+        display: flex
+        align-items: center
+        margin-bottom: 30px
+
+        & p
+            font-size: 24px
+            color: #089CA0
+            @include bold
+            margin-left: 25px 
+
+    &__close
+        position: absolute
+        right: 45px
+        top: 40px
+
+    &__text p
+        font-size: 22px
+        @include roboto
+        line-height: 28px
+        color: $black
+        margin-bottom: 30px
+
+        & span
+            color: #06BCC1
+
+        &:first-child
+            font-size: 24px
+            @include bold
