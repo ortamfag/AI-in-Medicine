@@ -206,7 +206,7 @@ const makeModal = modalSel => {
 		btnEl = document.querySelector(modalSel + '__preview'),
 		closeEl = document.querySelector(modalSel + 'Cross')
 		closeBody = document.querySelector('.popup')
-		bg = document.querySelector('.bg')
+		bg = document.querySelector(modalSel + 'Bg')
 		
 
 	btnEl.addEventListener('click', () => modalEl.classList.add('open'));
@@ -214,5 +214,10 @@ const makeModal = modalSel => {
 	bg.addEventListener('click', () => modalEl.classList.remove('open'));
 }
 
-makeModal('#britain') 
+makeModal('#britain')
+makeModal('#china')
+makeModal('#usa')
+makeModal('#singapore')
+makeModal('#korea')
+makeModal('#oae')      
 // end modals
