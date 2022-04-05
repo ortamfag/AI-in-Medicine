@@ -219,5 +219,8 @@ makeModal('#china')
 makeModal('#usa')
 makeModal('#singapore')
 makeModal('#korea')
-makeModal('#oae')      
+makeModal('#oae')
+makeModal('#heart');
+makeModal('#dna');
+makeModal('#alzheimer');        
 // end modals
