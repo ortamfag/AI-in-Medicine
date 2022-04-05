@@ -200,5 +200,19 @@ oaePreview.addEventListener('mouseout', () => oaeArrow.classList.toggle('none'))
 oaePreview.addEventListener('mouseout', () => oaePreview.classList.remove('country-preview-active'))
 
 
-//popup
+// modals 
+const makeModal = modalSel => {
+	const modalEl = document.querySelector(modalSel + 'Popup');
+		btnEl = document.querySelector(modalSel + '__preview'),
+		closeEl = document.querySelector(modalSel + 'Cross')
+		closeBody = document.querySelector('.popup')
+		bg = document.querySelector('.bg')
+		
 
+	btnEl.addEventListener('click', () => modalEl.classList.add('open'));
+	closeEl.addEventListener('click', () => modalEl.classList.remove('open'));
+	bg.addEventListener('click', () => modalEl.classList.remove('open'));
+}
+
+makeModal('#britain') 
+// end modals
