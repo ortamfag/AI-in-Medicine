@@ -19,7 +19,7 @@
 <body>
     <nav class="nav flex ">
         <div class="nav__img flex">
-            <img src="src/img/logo-map.svg" alt="Карта инновационных решений">
+            <img id="logo" style="z-index:5;" src="src/img/logo-map.svg" alt="Карта инновационных решений">
             <img src="src/img/logo-agent.svg" alt="Агентство Социальных Инноваций г. Москвы">
         </div>
 
@@ -30,6 +30,22 @@
             <li class="nav__item"><a href="#">Практики</a></li>
             <li class="nav__item"><a href="#">Кейсы</a></li>
         </ul>
+
+        <div id="burger" class="nav__burger">
+            <div></div>
+            <div></div>
+            <div></div>
+        </div>
+
+        <div id="sidebar" class="nav__sidebar">
+            <ul class="nav__sidebar-list">
+                <a href="#"><li class="nav__sidebar-item">Предпосылки</li></a>
+                <a href="#"><li class="nav__sidebar-item">Инновационные решения</li></a>
+                <a href="#"><li class="nav__sidebar-item">Тренды развития</li></a>
+                <a href="#"><li class="nav__sidebar-item">Мировые практики развития</li></a>
+                <a href="#"><li class="nav__sidebar-item">Кейсы внедрения</li></a>
+            </ul>
+        </div>
     </nav>
 
     <header class="header">
