@@ -29,3 +29,36 @@
         @include roboto
         font-size: 22px    
         width: 42%
+
+@media (max-width: 700px)
+    .intro
+        
+        &__item
+
+            display: block
+            
+
+            &:nth-child(1)
+                background: url(../img/intro__mobile-1.svg) no-repeat left top
+                background-size: 70px
+
+            &:nth-child(2)
+                background: url(../img/intro__mobile-2.svg) no-repeat left top
+                background-size: 120px
+
+            &:nth-child(3)
+                background: url(../img/intro__mobile-3.svg) no-repeat left top
+                background-size: 140px
+
+
+            & img
+                display: none
+
+            & p:nth-child(4)
+                width: 100%
+
+            & p:nth-child(2)
+                min-width: none
+                margin-bottom: 30px
+
+            

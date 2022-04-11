@@ -27,7 +27,7 @@
             margin-top: 25px
 
     &__button
-        padding: 0px 0px 100px 5%
+        padding: 0px 5% 100px 5%
 
     &__teleport
         display: flex
@@ -69,3 +69,23 @@
     100%
         transform: translate(0px,0px)
         
+
+@media (max-width: 700px)
+    .header
+
+        &__button
+            flex-direction: column
+            align-items: center
+
+            & a
+                width: 100%
+                text-align: center
+
+    #header__btn
+        &-1
+            margin-right: 0
+            margin-bottom: 25px
+            width: 90%
+
+        &-2
+            width: 90%
