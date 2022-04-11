@@ -79,3 +79,38 @@
     
     &-fifth
         background-image: url('../img/science.svg')
+
+
+@media (max-width: 700px)
+    .compilation
+
+        &__item
+
+            &-title
+                display: block
+
+                & p
+                    margin-left: 0
+                    text-align: center
+                    margin-top: 10px
+                    text-decoration: underline
+                    font-size: 25px
+
+                & div
+                    margin: 0 auto
+                    width: 167px
+                    height: 167px
+
+            & a
+                display: none
+
+        &__inner
+            grid-column-gap: 20px
+            grid-row-gap: 35px 
+
+        &-btn
+            width: 90%
+
+
+
+        
