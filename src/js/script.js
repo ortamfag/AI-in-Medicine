@@ -232,3 +232,21 @@ const sidebar = document.querySelector("#sidebar")
 
 burger.addEventListener('click', () => burger.classList.toggle('nav__burger-active'))
 burger.addEventListener('click', () => sidebar.classList.toggle('nav__sidebar-active'))
+
+//burger
+
+//compilation switch
+const compilationFirst = document.querySelector('#compilation-first')
+const compilationSecond = document.querySelector('#compilation-second')
+const compilationThird = document.querySelector('#compilation-third')
+const compilationFourth = document.querySelector('#compilation-fourth')
+const compilationFifth = document.querySelector('#compilation-fifth')
+
+const compilationLink1 = document.querySelector('.compilation__link-1')
+const compilationLink2 = document.querySelector('.compilation__link-2')
+const compilationLink3 = document.querySelector('.compilation__link-3')
+const compilationLink4 = document.querySelector('.compilation__link-4')
+const compilationLink5 = document.querySelector('.compilation__link-5')
+
+compilationFirst.addEventListener('click', () => compilationLink1.classList.toggle('compilation__link-1-active'))
+compilationFirst.addEventListener('click', () => compilationFirst.classList.toggle('compilation__item-title-active-1'))

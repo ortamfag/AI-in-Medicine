@@ -31,6 +31,7 @@
                 background-repeat: no-repeat
                 background-position: center center
 
+
             
         &-title p
             @include bold
@@ -101,8 +102,11 @@
                     width: 167px
                     height: 167px
 
-            & a
-                display: none
+            &-title-active-1
+                background-color: $white !important
+                transition: 0.4s !important
+                background-image: url(../img/pulseblue.svg) !important
+            
 
         &__inner
             grid-column-gap: 20px
@@ -110,6 +114,43 @@
 
         &-btn
             width: 90%
+
+        &__link
+
+            &-1
+                display: none !important
+
+                &-active
+                    display: block !important
+
+            &-2
+                display: none !important
+
+                &-active
+                    display: block !important
+
+
+            &-3
+                display: none !important
+
+                &-active
+                    display: block !important
+
+            &-4
+                display: none !important
+
+                &-active
+                    display: block !important
+
+            &-5
+                display: none !important
+
+                &-active
+                    display: block !important
+
+
+
+            
 
 
 
