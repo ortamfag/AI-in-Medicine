@@ -3,15 +3,26 @@ const switch2 = document.querySelector('#switch2')
 const trendText1 = document.querySelector('#trendText1')
 const trendText2 = document.querySelector('#trendText2')
 
-switch1.addEventListener('click', () => switch1.classList.toggle('trend__switch-item-active'))
-switch1.addEventListener('click', () => switch2.classList.remove('trend__switch-item-active'))
-switch1.addEventListener('click', () => trendText1.classList.toggle('trend__text-active'))
-switch1.addEventListener('click', () => trendText2.classList.remove('trend__text-active'))
+if(window.innerWidth >= 700){
+	switch1.addEventListener('click', () => switch1.classList.toggle('trend__switch-item-active'))
+	switch1.addEventListener('click', () => switch2.classList.remove('trend__switch-item-active'))
+	switch1.addEventListener('click', () => trendText1.classList.toggle('trend__text-active'))
+	switch1.addEventListener('click', () => trendText2.classList.remove('trend__text-active'))
 
-switch2.addEventListener('click', () => switch2.classList.toggle('trend__switch-item-active'))
-switch2.addEventListener('click', () => switch1.classList.remove('trend__switch-item-active'))
-switch2.addEventListener('click', () => trendText2.classList.toggle('trend__text-active'))
-switch2.addEventListener('click', () => trendText1.classList.remove('trend__text-active'))
+	switch2.addEventListener('click', () => switch2.classList.toggle('trend__switch-item-active'))
+	switch2.addEventListener('click', () => switch1.classList.remove('trend__switch-item-active'))
+	switch2.addEventListener('click', () => trendText2.classList.toggle('trend__text-active'))
+	switch2.addEventListener('click', () => trendText1.classList.remove('trend__text-active'))
+} 
+	else {
+		switch1.addEventListener('click', () => switch2.classList.toggle('trend__switch-item-active'))
+		switch1.addEventListener('click', () => trendText1.classList.toggle('trend__text-active'))
+		switch1.addEventListener('click', () => trendText2.classList.remove('trend__text-active'))
+
+		switch2.addEventListener('click', () => switch1.classList.toggle('trend__switch-item-active'))
+		switch2.addEventListener('click', () => trendText2.classList.toggle('trend__text-active'))
+		switch2.addEventListener('click', () => trendText1.classList.remove('trend__text-active'))
+}
 
 const britainPreview = document.querySelector('#britain__preview')
 const chinaPreview = document.querySelector('#china__preview')
@@ -250,3 +261,15 @@ const compilationLink5 = document.querySelector('.compilation__link-5')
 
 compilationFirst.addEventListener('click', () => compilationLink1.classList.toggle('compilation__link-1-active'))
 compilationFirst.addEventListener('click', () => compilationFirst.classList.toggle('compilation__item-title-active-1'))
+
+compilationSecond.addEventListener('click', () => compilationLink2.classList.toggle('compilation__link-2-active'))
+compilationSecond.addEventListener('click', () => compilationSecond.classList.toggle('compilation__item-title-active-2'))
+
+compilationThird.addEventListener('click', () => compilationLink3.classList.toggle('compilation__link-3-active'))
+compilationThird.addEventListener('click', () => compilationThird.classList.toggle('compilation__item-title-active-3'))
+
+compilationFourth.addEventListener('click', () => compilationLink4.classList.toggle('compilation__link-4-active'))
+compilationFourth.addEventListener('click', () => compilationFourth.classList.toggle('compilation__item-title-active-4'))
+
+compilationFifth.addEventListener('click', () => compilationLink5.classList.toggle('compilation__link-5-active'))
+compilationFifth.addEventListener('click', () => compilationFifth.classList.toggle('compilation__item-title-active-5'))

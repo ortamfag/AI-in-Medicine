@@ -27,6 +27,7 @@
                 background-color: #06BCC1
                 border-radius: 13px
                 width: 95px
+                min-width: 95px
                 height: 95px
                 background-repeat: no-repeat
                 background-position: center center
@@ -99,15 +100,38 @@
 
                 & div
                     margin: 0 auto
-                    width: 167px
-                    height: 167px
+                    width: 167px !important
+                    height: 167px !important
 
             &-title-active-1
                 background-color: $white !important
                 transition: 0.4s !important
                 background-image: url(../img/pulseblue.svg) !important
+
+            &-title-active-2
+                background-color: $white !important
+                transition: 0.4s !important
+                background-image: url(../img/diagnosticblue.svg) !important
+
+            &-title-active-3
+                background-color: $white !important
+                transition: 0.4s !important
+                background-image: url(../img/solutionsblue.svg) !important
+
+            &-title-active-4
+                background-color: $white !important
+                transition: 0.4s !important
+                background-image: url(../img/healthblue.svg) !important
+
+            &-title-active-5
+                background-color: $white !important
+                transition: 0.4s !important
+                background-image: url(../img/scienceblue.svg) !important
             
 
+            & a
+                font-size: 18px
+        
         &__inner
             grid-column-gap: 20px
             grid-row-gap: 35px 
@@ -119,12 +143,14 @@
 
             &-1
                 display: none !important
+                text-align: center
 
                 &-active
                     display: block !important
 
             &-2
                 display: none !important
+                text-align: center
 
                 &-active
                     display: block !important
@@ -132,23 +158,45 @@
 
             &-3
                 display: none !important
+                text-align: center
 
                 &-active
                     display: block !important
 
             &-4
                 display: none !important
+                text-align: center
 
                 &-active
                     display: block !important
 
             &-5
                 display: none !important
+                text-align: center
 
                 &-active
                     display: block !important
 
+@media (max-width: 900px)
+    .compilation
 
+        &__item
+
+            & a
+                font-size: 20px
+
+            &-title p
+                font-size: 28px
+            &-title div
+                width: 85px
+                min-width: 85px
+                height: 85px
+
+            &-title
+                align-items: flex-start
+
+        &__inner
+            padding: 0px 1%
 
             
 
