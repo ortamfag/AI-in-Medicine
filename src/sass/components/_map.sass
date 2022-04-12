@@ -23,6 +23,8 @@
                 position: absolute
                 top: 35px
                 right: 88%
+        &-mobile
+            display: none
         
     &-btn
         background: #06BCC1
@@ -87,3 +89,140 @@
 #usaArrow-blue, #usaArrow-black
     top: -75px
     right: 100%
+
+@media (max-width: 1700px)
+    .korea
+        right: 9%
+
+    .oae
+        right: 29%
+    
+    .singapore
+        right: 27%
+
+@media (max-width: 1600px)
+    .korea
+        right: 7%
+
+@media (max-width: 1500px)
+    .korea
+        right: 4%
+
+    .oae
+        right: 27%
+    
+    .singapore
+        right: 24%
+
+@media (max-width: 1400px)
+    .korea
+        right: 1%
+
+@media (max-width: 1300px)
+    .korea
+        right: -3%
+
+    .oae
+        right: 23%
+    
+    .singapore
+        right: 20%
+
+@media (max-width: 1200px)
+    .korea
+        right: -7%
+
+@media (max-width: 1100px)
+    .korea
+        right: -9%
+    .oae
+        right: 20%
+    .china
+        right: 7%
+    .usa
+        left: 19%
+
+@media (max-width: 1000px)
+    .korea
+        top: 300px
+        right: -11%
+    
+    .singapore
+        top: 410px
+        right: 19%
+
+    .oae
+        top: 305px
+        right: 18%
+
+    .britain
+        top: 25px
+
+    .usa
+        left: 35%
+
+@media (max-width: 900px)
+    .korea
+        top: 310px
+        right: -14%
+    
+    .singapore
+        top: 410px
+        right: 19%
+
+    .oae
+        top: 310px
+        right: 16%
+
+    .britain
+        top: 35px
+
+    .usa
+        left: 35%
+        top: 305px
+
+    .china
+        right: 4%
+        top: 30px
+
+@media (max-width: 800px)
+    .korea
+        top: 315px
+        right: -18%
+
+    .singapore
+        top: 400px
+        right: 21%
+
+    .britain
+        top: 45px
+
+    .oae
+        right: 14%
+
+@media (max-width: 700px)
+    .map
+
+        &__inner
+            display: none
+
+            &-part
+                display: flex
+                padding: 20px
+                background-color: $white
+                justify-content: space-between
+                align-items: center
+                box-shadow: 4px 4px 15px rgba(0, 0, 0, 0.25)
+                border-radius: 7px
+                cursor: pointer
+
+                & p
+                    font-size: 24px
+                    @include bold
+                    color: #089CA0
+                    margin-right: 45%
+
+        &__inner-mobile
+            display: block
+
+

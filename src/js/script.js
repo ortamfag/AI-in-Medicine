@@ -228,6 +228,7 @@ const makeModal = modalSel => {
 makeModal('#britain')
 makeModal('#china')
 makeModal('#usa')
+makeModal('#m-usa')
 makeModal('#singapore')
 makeModal('#korea')
 makeModal('#oae')
