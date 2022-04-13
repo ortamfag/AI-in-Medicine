@@ -226,12 +226,17 @@ const makeModal = modalSel => {
 }
 
 makeModal('#britain')
+makeModal('#m-britain')
 makeModal('#china')
+makeModal('#m-china')
 makeModal('#usa')
 makeModal('#m-usa')
 makeModal('#singapore')
+makeModal('#m-singapore')
 makeModal('#korea')
+makeModal('#m-korea')
 makeModal('#oae')
+makeModal('#m-oae')
 makeModal('#heart');
 makeModal('#dna');
 makeModal('#alzheimer');        
