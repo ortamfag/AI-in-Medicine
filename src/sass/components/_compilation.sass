@@ -198,6 +198,41 @@
         &__inner
             padding: 0px 1%
 
+@media (max-width: 500px)
+    .compilation
+
+        &__item
+
+            &-title 
+
+                & p
+                    font-size: 18px
+                    text-align: left
+                    line-height: 25px
+                    @include roboto
+
+                & div
+                    margin: 0
+
+            & a
+                font-size: 18px
+                line-height: 25px
+
+@media (max-width: 400px)
+    .compilation
+
+        &__inner
+            grid-template-columns: 100%
+            justify-items: center
+
+        &__item-title
+            
+            & div
+                margin: 0 auto
+
+            & p
+                text-align: center
+                margin-top: 20px
             
 
 
